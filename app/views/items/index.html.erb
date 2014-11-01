@@ -25,12 +25,17 @@
     </div>
   </div>
 
-    <% @items.each do |item| %>
+    <% @items.take(4).each do |item| %>
       <li>
         <a><%= link_to item.name, item %></a>
       </li>
     <% end %>
 
+    <% @items.drop(4).each do |item| %>
+      <li>
+        <a><%= link_to item.name, item %></a>
+      </li>
+    <% end %>
 
 <br>
 
