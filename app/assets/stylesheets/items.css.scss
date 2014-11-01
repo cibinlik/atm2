@@ -11,7 +11,7 @@ html, body {
 	height: 100%
 }
 
-html  {
+body  {
 background-image: image-url('atm_bg.png')
 }
 
@@ -34,4 +34,39 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.content {
+	padding-left: 20px;
+	width: 536px;
+	height: 370px;
+	top: 300px;
+	margin-top: 207px;
+	margin-left: 325px;
+}
+
+.content .left {
+	float: left;
+}
+
+.content .right {
+	float: right;
+}
+
+.content ul {
+	list-style: none;
+	margin-top: 130px;
+}
+
+.content ul li {
+
+}
+
+.content a {
+	background: #f60;
+	color: #fff;
+	padding: 10px 50px;
+	margin: 0 0 23px 0;
+	text-decoration: none;
+	display: block
 }

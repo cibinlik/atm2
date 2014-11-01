@@ -1,27 +1,36 @@
-<h1> Hoşgeldin Hack ING</h1>
+  <div class="content">
+    <div class="left">
+      <ul>
+        <li>
+          <a href="#">Menu 1</a></li>
+        <li>
+          <a href="#">Menu 2</a></li>
+        <li>
+          <a href="#">Menu 3</a></li>
+        <li>
+          <a href="#">Menu 4</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <a href="#">Menu 5</a></li>
+        <li>
+          <a href="#">Menu 6</a></li>
+        <li>
+          <a href="#">Menu 7</a></li>
+        <li>
+          <a href="#">Ana menüye git</a></li>
+      </ul>     
+    </div>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>İşlem</th>
-      <th>Sıklık</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @items.each do |item| %>
-      <tr>
-        <td><%= link_to item.name, item %></td>
-        <td><%= item.freq %></td>
-        <!-- <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        -->
-      </tr>
+      <li>
+        <a><%= link_to item.name, item %></a>
+      </li>
     <% end %>
-  </tbody>
-</table>
+
 
 <br>
 
