@@ -1,42 +1,22 @@
   <div class="content">
     <div class="left">
       <ul>
+        <% @items.take(4).each do |item| %>
         <li>
-          <a href="#">Menu 1</a></li>
-        <li>
-          <a href="#">Menu 2</a></li>
-        <li>
-          <a href="#">Menu 3</a></li>
-        <li>
-          <a href="#">Menu 4</a></li>
+          <%= link_to item.name, item %>
+        </li>
+        <% end %>
       </ul>
     </div>
     <div class="right">
       <ul>
+        <% @items.drop(4).each do |item| %>
         <li>
-          <a href="#">Menu 5</a></li>
+          <%= link_to item.name, item %>
         <li>
-          <a href="#">Menu 6</a></li>
-        <li>
-          <a href="#">Menu 7</a></li>
-        <li>
-          <a href="#">Ana menüye git</a></li>
-      </ul>     
+        <% end %>
+      </ul>
     </div>
   </div>
-
-    <% @items.take(4).each do |item| %>
-      <li>
-        <a><%= link_to item.name, item %></a>
-      </li>
-    <% end %>
-
-    <% @items.drop(4).each do |item| %>
-      <li>
-        <a><%= link_to item.name, item %></a>
-      </li>
-    <% end %>
-
-<br>
-
+</br>
 <%= link_to 'Yeni İşlem', new_item_path %>

@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all.sort_by(&:freq).reverse
+    @items = Item.all.sort_by(&:freq).take(7).reverse
   end
 
   # GET /items/1
