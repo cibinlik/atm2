@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong> <%= @item.name %> </strong>
+  işleminiz başarıyla tamamlandı. 
+  
+</p>
+
+<p>
+   Bu işlemi ATM üzerinden 
+  <strong> <%= @item.freq %> </strong> defa gerçekleştirdiniz.
+</p>
+
+<%= link_to 'Hızlı Menü', items_path %>
+<%= link_to 'Kart iade', "http://www.oyleyani.com" %>
