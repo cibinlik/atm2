@@ -9,7 +9,7 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  database: postgres
+  database: atmv2
   hostname: localhost
   username: cibinlik
   password: karasinek
