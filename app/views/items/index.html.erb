@@ -1,13 +1,22 @@
   <div class="content">
   <img class="logo">
     <div class="left">
+      <ul class="oval-ul-left">
+        <% @items.take(4).each do |item| %>
+          <li class="oval">
+            <%= link_to item.name, item %>
+          </li>
+        <% end %>
+      </ul>
       <ul>
         <% @items.take(4).each do |item| %>
         <li>
           <%= link_to item.name, item %>
         </li>
+
         <% end %>
       </ul>
+
     </div>
     <div class="right">
       <ul>
@@ -20,5 +29,15 @@
           <%= link_to "Ana menü", new_item_path %>
         </li>
       </ul>
+      <ul class="oval-ul-right">
+        <% @items.drop(4).each do |item| %>
+          <li class="oval">
+            <%= link_to item.name, item %>
+          </li>
+        <% end %>
+        <li class="oval">
+          <%= link_to "Ana menü", new_item_path %>
+        </li>
+      </ul>      
     </div>
   </div>

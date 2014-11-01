@@ -97,4 +97,27 @@ p {
 
 .left { float: left; }
 
-.right { float: right;}
+.right { float: right; }
+
+.content .oval-ul-left {
+	position: absolute;
+	left: -65px;
+	top: -6px;
+}
+
+.content .oval-ul-right {
+	position: absolute;
+	right: -65px;
+	top: -6px;
+}
+
+.content .oval a {
+	border-radius: 30px;
+	width: 30px;
+	height: 30px;
+	display: block;;
+	padding: 0;
+	background: transparent;
+	margin-bottom: 33px;
+	font-size: 0.01px;
+}
