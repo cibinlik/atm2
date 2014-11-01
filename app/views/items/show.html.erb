@@ -1,15 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="show">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong> <%= @item.name %> </strong>
-  işleminiz başarıyla tamamlandı. 
-  
-</p>
+	<p>
+	  <strong> <%= @item.name %> </strong>
+	  işleminiz başarıyla tamamlandı. 
+	  
+	</p>
 
-<p>
-   Bu işlemi ATM üzerinden 
-  <strong> <%= @item.freq %> </strong> defa gerçekleştirdiniz.
-</p>
+	<p>
+	   Bu işlemi ATM üzerinden 
+	  <strong> <%= @item.freq %> </strong> defa gerçekleştirdiniz.
+	</p>
 
-<%= link_to 'Hızlı Menü', items_path %>
-<%= link_to 'Kart iade', "http://www.oyleyani.com" %>
+	<div class="left">
+		<%= link_to 'Hızlı Menü', items_path %>
+	</div>	
+	<div class="right">
+		<%= link_to 'Kart iade', "http://www.oyleyani.com" %>	
+	</div>
+	
+</div>
