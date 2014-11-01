@@ -37,12 +37,21 @@ p {
 }
 
 .content {
-	padding-left: 20px;
-	width: 536px;
+	width: 602px;
 	height: 370px;
-	top: 300px;
-	margin-top: 207px;
-	margin-left: 325px;
+	margin-top: 200px;
+	margin-left: 285px;
+	position: relative;
+}
+
+.content .logo {
+	position: absolute;
+	width: 359px;
+	height: 77px;
+	top: 23px;
+	left: 146px;
+	background-image: image-url('kurumsal-logobeyaz-big.jpg')
+
 }
 
 .content .left {
@@ -62,7 +71,7 @@ p {
 
 }
 
-.content a {
+.content a , .show a{
 	background: #f60;
 	color: #fff;
 	padding: 10px 50px;
@@ -70,3 +79,22 @@ p {
 	text-decoration: none;
 	display: block
 }
+
+.show {
+	margin: 230px 0 0 316px;
+	overflow: hidden;
+	width: 578px;
+}
+
+.show p {
+	padding-left: 30px;
+}
+
+.show a {
+	width: 99px;
+	margin-top: 213px;
+}
+
+.left { float: left; }
+
+.right { float: right;}
