@@ -1,0 +1,41 @@
+* {margin:0;padding: 0}
+body {
+	background: url(img/atm_bg.png) no-repeat 0 0;
+	font-family: Helvetica;
+	font-style: light;
+}
+
+.content {
+	padding-left: 20px;
+	width: 536px;
+	height: 370px;
+	top: 300px;
+	margin-top: 207px;
+	margin-left: 325px;
+}
+
+.content .left {
+	float: left;
+}
+
+.content .right {
+	float: right;
+}
+
+.content ul {
+	list-style: none;
+	margin-top: 130px;
+}
+
+.content ul li {
+
+}
+
+.content a {
+	background: #f60;
+	color: #fff;
+	padding: 10px 50px;
+	margin: 0 0 23px 0;
+	text-decoration: none;
+	display: block
+}
